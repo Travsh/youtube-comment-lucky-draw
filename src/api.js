@@ -1,6 +1,6 @@
 import axios from 'axios';
 
-const API_KEY = 'AIzaSyDO36puEoVzyQC8YzSNxgE4s9Ux5JOL8ss'; // Replace with your YouTube API key
+const API_KEY = process.env.REACT_APP_YOUTUBE_API_KEY; // Replace with your YouTube API key
 
 export const getComments = async (videoId) => {
   let comments = [];
